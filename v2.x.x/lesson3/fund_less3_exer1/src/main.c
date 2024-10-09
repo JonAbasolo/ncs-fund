@@ -4,3 +4,14 @@
  * SPDX-License-Identifier: LicenseRef-Nordic-5-Clause
  */
 
+#include <zephyr/kernel.h>
+#include <zephyr/sys/printk.h>
+
+int main(void)
+{
+    while (1) 
+    {
+        printk("Hello world!\n");
+        k_msleep(1000);
+    }
+}
